@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Autenticar usuario</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="app.js">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
@@ -57,52 +58,28 @@
       <div class="container">
         <a href="Index.html"></a>
         <section class="form-register">
-          <h4>Formulario Registro</h4>
-          <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-          <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+          <h4>Autenticar usuario</h4>        
           <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-          <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-          <input class="controls" type="password" name="correo" id="correo" placeholder="Confirme su Contraseña">
-          <p>Estoy de acuerdo con <a href="terminosycon.html">Terminos y Condiciones</a></p>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              
-              Acepta terminos y condiciones
-            </label>
-          </div>
-          
-          <input class="botons" type="submit" value="Registrar">
-          
-          <p><a href="Autenticar.html">¿Ya tengo Cuenta?</a></p>
-        </section>
-        
-            <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button> -->
-                   
+          <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">          
+          <input class="botons" type="submit" value="Autenticar usuario">
+          <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+        </section>        
       </div>
 
-      <!-- <h1>My First JavaScript</h1> -->
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Top popover">
+        Popover on top
+      </button>
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Right popover">
+        Popover on right
+      </button>
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Bottom popover">
+        Popover on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Left popover">
+        Popover on left
+      </button>
 
-<!-- <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
-<p id="demo"></p> -->
-
-
-<!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div> -->
-
-<!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button> -->
-
-    
+      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+      
 </body>
 </html>
