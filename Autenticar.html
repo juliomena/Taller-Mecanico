@@ -59,27 +59,25 @@
         <a href="Index.html"></a>
         <section class="form-register">
           <h4>Autenticar usuario</h4>        
-          <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-          <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">          
-          <input class="botons" type="submit" value="Autenticar usuario">
-          <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+          <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo">
+          <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">          
+          <input onclick="myFunction()" class="botons" type="submit" value="Autenticar usuario">
         </section>        
       </div>
 
-      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Top popover">
-        Popover on top
-      </button>
-      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Right popover">
-        Popover on right
-      </button>
-      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Bottom popover">
-        Popover on bottom
-      </button>
-      <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Left popover">
-        Popover on left
-      </button>
+      <p style="text-align: center;" id="demo"></p>
 
-      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+      <script>
+      function myFunction() {
+        var txt;
+        if (confirm("Bienvenido, su acceso fue OK!")) {
+          txt = "Su acceso fue OK!";
+        } else {
+          txt = "Su acceso fue Cancelado!";
+        }
+        document.getElementById("demo").innerHTML = txt;        
+      }
+      </script>
       
 </body>
 </html>

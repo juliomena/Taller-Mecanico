@@ -70,39 +70,27 @@
               
               Acepta terminos y condiciones
             </label>
-          </div>
-          
-          <input class="botons" type="submit" value="Registrar">
+          </div>          
+          <input onclick="myFunction()" class="botons" type="submit" value="Registrar">
           
           <p><a href="Autenticar.html">¿Ya tengo Cuenta?</a></p>
-        </section>
-        
-            <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button> -->
+        </section>       
                    
-      </div>
+      </div> 
+      
+      <p style="text-align: center;" id="demo"></p>
 
-      <!-- <h1>My First JavaScript</h1> -->
+      <script>
+      function myFunction() {
+        var txt;
+        if (confirm("Bienvenido, su acceso fue Creado!")) {
+          txt = "Su acceso fue Creado!";
+        } else {
+          txt = "Su acceso fue Cancelado!";
+        }
+        document.getElementById("demo").innerHTML = txt;        
+      }
+      </script>
 
-<!-- <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
-<p id="demo"></p> -->
-
-
-<!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div> -->
-
-<!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button> -->
-
-    
 </body>
 </html>
