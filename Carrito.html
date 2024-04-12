@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Carrito</title>
+    <link rel="stylesheet" href="Style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -42,6 +43,9 @@
                 <a class="dropdown-item" href="ElectronicaAutomotriz.html">Electrónica Automotriz</a>
                 <a class="dropdown-item" href="CajasDeCambio.html">Cajas de cambio</a>
                 <a class="dropdown-item" href="SuspencionDireccion.html">Suspensión y Dirección</a>
+                <a class="dropdown-item" href="Carrito.html">Compra de servicios</a>
+                
+
               </div>
             </li>
           </ul>
@@ -53,29 +57,15 @@
       </nav>
 <!-- Carrito de compra -->
     
-	<div class="container">
-		<h1>Carrito</h1>
-		<hr>
-		<table class="table">
-			<thead>
-			  <tr>
-				<th scope="col">Codigo producto</th>
-				<th scope="col">Producto</th>
-				<th scope="col">Cantidad</th>
-				<th scope="col">Valor</th>
-				<th scope="col">Total a pago</th>
-			  </tr>
-			</thead>
-			<tbody id="items"></tbody>
-			<tfoot>
-			  <tr id="footer">
-				<th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
-			  </tr>
-			</tfoot>
-		  </table>
-		<div class="row" id="cards"></div>
-	</div>
+<h2 style="text-align:center">Carro de servicios</h2>
 
+<div class="card">
+  <img src="img/Alineacion.jpg" alt="Serv alinea" style="width: 100%;">
+  <h1>Servicio de Alineacion</h1>
+  <p class="price">$30.000</p>
+  <p>Al hacer una alineación se ajustan los ángulos de las llantas del automóvil para que estén paralelas entre sí y perpendiculares al piso.</p>
+  <p><button>Agregar al Carro de servicios</button></p>
+</div>
 	
 </body>
 </html>
